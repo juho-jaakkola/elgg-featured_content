@@ -10,6 +10,6 @@ $guid = get_input('guid');
 
 $entity = get_entity($guid);
 
-unset($entity->featured);
+$entity->featured = null;
 
 system_message(elgg_echo('featured_content:unfeature:success'));
